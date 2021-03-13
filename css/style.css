@@ -1,0 +1,92 @@
+.big-title{
+  font-size: 1.8rem;
+  text-align: center;
+  color: #fff;
+}
+
+html, body{
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body{
+  font-family: 'Red Hat Text', sans-serif;
+  background-position: top;
+  background-color: hsl(234, 17%, 12%);
+}
+
+
+/*for background images*/
+body::before{
+  content: "";
+  background-image: url("../images/bg-stars.svg");
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width:100%;
+
+}
+
+
+/*for the timer*/
+.timer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 58%;
+  position: relative;
+}
+
+input[type="text"]{
+  width: 4.5rem;
+  height: 4.5rem;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 0.5rem;
+  font-family: 'Red Hat Text', sans-serif;
+
+}
+
+.days, .hours, .minutes, .seconds{
+  text-align: center;
+}
+
+.description{
+  display: inline-block;
+  font-size: 0.6rem;
+  text-align: center;
+  width: 100%;
+  margin: 1rem 0;
+  letter-spacing: 0.3rem;
+  color: #fff;
+}
+
+/*for footer*/
+.footer-area{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  top: 4.3rem
+
+}
+/*for social media*/
+.social-media{
+  position: relative;
+  z-index: 2;
+
+}
+
+.social-icon{
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.hills{
+  position: absolute;
+  width: 150%;
+  height: 15rem;
+}
